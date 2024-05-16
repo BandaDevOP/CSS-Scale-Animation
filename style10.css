@@ -1,0 +1,44 @@
+/*using animation*/
+#box1{
+   width: 250px;
+   height: 250px;
+   background: red;
+   font-size: 225px;
+   text-align: center; 
+    /*
+   animation: mySlide; /*specify animation*/
+   /*animation-play-state: running;
+   animation-iteration-count: infinite; /*number of iterations */
+   /*animation-delay: 0s;
+   animation-timing-function: ease-in-out;
+   animation-duration: 5s; /*animation duration*/
+    
+   /*shortcut to create all animation properties in one line*/
+   /* animation:3s linear  0s infinite running mySlide;*/
+
+}
+#box1:hover{
+    animation:3s linear  0s infinite running myScale; 
+/*using a psudoclass to activate animation*/
+}
+/* to use animation create a Keyframes rule and give it a name*/
+@keyframes myOpacity{
+ from{margin-left: 0%;} /*from keyword used to start animation*/
+ to{margin-left: 100%;} /*to Keyword used to end animation*/   
+}
+@keyframes myRotate{
+    100%{transform: rotateZ(360deg)}
+}
+@keyframes myOpacity{
+    50%{opacity: 0;}
+}
+@keyframes myScale{
+    50%{transform: scale(0, 0);}
+}
+@keyframes myColorChange{
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: green;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
